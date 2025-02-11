@@ -1,0 +1,153 @@
+/* Menu */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 80px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    color: #ff1616;
+}
+
+.activo {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Containner Main */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+main iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+main h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+main section p {
+    text-align: justify;
+}
+
+.AutorArticulo {
+    color: #ff1616;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.AutorFoto {
+    font-size: 12px;
+    color: #666;
+    text-align: end;
+}
+
+.AutorFoto span {
+    font-style: italic;
+    color: #ff1616;
+}
+
+p span {
+    color: #ff1616;
+}
+
+.cita {
+    background-color: #ddd;
+    padding: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+
+.cita span {
+    color: #ff1616;
+    text-decoration: none;
+}
+
+.autor-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imgDesiree {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
