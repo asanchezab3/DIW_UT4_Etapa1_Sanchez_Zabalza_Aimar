@@ -1,14 +1,23 @@
+:root {
+    --color-rojo: #ff1616;
+    --color-gris-neutro: #666;
+    --color-gris-claro: #ddd;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+    --color-fondo-claro: #f0f0f0;
+}
+
 /* Menu */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--color-blanco);
     overflow-x: hidden;
 }
 
 header {
-    background-color: #000000;
+    background-color: var(--color-negro);
     text-align: center;
     padding: 20px 0;
     display: flex;
@@ -39,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--color-blanco);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -48,7 +57,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff1616;
+    color: var(--color-rojo);
 }
 
 .activo {
@@ -58,7 +67,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #000000;
+    background-color: var(--color-negro);
     text-align: center;
     padding: 20px 0;
     display: flex;
@@ -69,7 +78,7 @@ footer {
 footer p {
     margin: 5;
     font-size: 14px;
-    color: white;
+    color: var(--color-blanco);
 }
 
 /* Containner Main */
@@ -98,7 +107,7 @@ main h1 {
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-    font-family: sans-serif;
+    font-family: Georgia;
 }
 
 main section p {
@@ -106,37 +115,37 @@ main section p {
 }
 
 .AutorArticulo {
-    color: #ff1616;
+    color: var(--color-rojo);
     font-size: 14px;
     font-weight: normal;
 }
 
 .AutorFoto {
     font-size: 12px;
-    color: #666;
+    color: var(--color-gris-neutro);
     text-align: end;
 }
 
 .AutorFoto span {
     font-style: italic;
-    color: #ff1616;
+    color: var(--color-rojo);
 }
 
 p span {
-    color: #ff1616;
+    color: var(--color-rojo);
 }
 
 .cita {
-    background-color: #ddd;
+    background-color: var(--color-gris-claro);
     padding: 10px;
     font-size: 14px;
     font-style: italic;
-    color: #666;
+    color: var(--color-gris-neutro);
     text-align: center;
 }
 
 .cita span {
-    color: #ff1616;
+    color: var(--color-rojo);
     text-decoration: none;
 }
 
@@ -150,4 +159,41 @@ p span {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+
+.tiposRobotContainer {
+    width: 40%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Pantalla tipos-de-robots.html */
+.textCenter {
+    text-align: center;
+}
+
+.card {
+    border-left: 5px solid var(--color-rojo);
+    padding: 10px;
+    color: var(--color-gris-neutro);
+    background-color: var(--color-fondo-claro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.author {
+    font-style: italic;
+    color: var(--color-gris-neutro);
+}
+
+.lista-personalizada {
+    list-style-image: url("./../img/icon-robot.png");
+}
+
+.lista-personalizada ul {
+    list-style: square;
+}
+
+.lista-personalizada ul>li ul {
+    list-style: disc;
 }
