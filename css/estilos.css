@@ -1,3 +1,7 @@
+/* =============================== */
+/*          VARIABLES CSS          */
+/* =============================== */
+/* Definición de colores globales para reutilización */
 :root {
     --color-rojo: #ff1616;
     --color-gris-neutro: #666;
@@ -7,15 +11,20 @@
     --color-fondo-claro: #f0f0f0;
 }
 
-/* Menu */
+/* =============================== */
+/*            ESTILOS GENERALES    */
+/* =============================== */
 body {
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--color-blanco);
-    overflow-x: hidden;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
+/* =============================== */
+/*             HEADER              */
+/* =============================== */
 header {
     background-color: var(--color-negro);
     text-align: center;
@@ -29,13 +38,16 @@ header img {
     width: 80px;
 }
 
+/* =============================== */
+/*             MENÚ                */
+/* =============================== */
 nav {
     text-align: center;
     margin-top: 10px;
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* Elimina los estilos predeterminados de la lista */
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -57,15 +69,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--color-rojo);
+    color: var(--color-rojo); /* Cambio de color al pasar el ratón */
 }
 
+/* Clase para resaltar el enlace activo */
 .activo {
     font-weight: bold;
     font-style: italic;
 }
 
-/* Footer */
+/* =============================== */
+/*             FOOTER              */
+/* =============================== */
 footer {
     background-color: var(--color-negro);
     text-align: center;
@@ -81,13 +96,16 @@ footer p {
     color: var(--color-blanco);
 }
 
-/* Containner Main */
+/* =============================== */
+/*          CONTENIDO PRINCIPAL    */
+/* =============================== */
 main {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Imágenes dentro del contenido */
 main img {
     max-width: 100%;
     height: auto;
@@ -95,6 +113,7 @@ main img {
     margin: 20px auto;
 }
 
+/* Iframes responsivos */
 main iframe {
     max-width: 100%;
     height: auto;
@@ -102,54 +121,62 @@ main iframe {
     margin: 20px auto;
 }
 
+/* Estilos del título principal */
 main h1 {
     font-size: 32px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Párrafos dentro de secciones */
 main section p {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.AutorArticulo {
+/* =============================== */
+/*         SECCIÓN DEL AUTOR       */
+/* =============================== */
+.autor__articulo{
     color: var(--color-rojo);
     font-size: 14px;
     font-weight: normal;
     text-decoration: none;
 }
 
-.AutorFoto {
+.autor__foto{
     font-size: 12px;
     color: var(--color-gris-neutro);
     text-align: end;
 }
 
-.AutorFoto a {
+.autor__foto a {
     font-style: italic;
     color: var(--color-rojo);
     text-decoration: none;
 }
 
-.AutorFoto a:hover {
-    font-style: italic;
-    color: var(--color-rojo);
+.autor__foto a:hover {
     text-decoration: underline;
 }
 
+/* =============================== */
+/*      ENLACES GENERALES          */
+/* =============================== */
 p a {
     color: var(--color-rojo);
     text-decoration: none;
 }
 
 p a:hover {
-    color: var(--color-rojo);
     text-decoration: underline;
 }
 
+/* =============================== */
+/*            CITAS                */
+/* =============================== */
 .cita {
     background-color: var(--color-gris-claro);
     padding: 10px;
@@ -164,29 +191,38 @@ p a:hover {
     text-decoration: none;
 }
 
-.autor-container {
+/* =============================== */
+/*          CONTENEDORES           */
+/* =============================== */
+/* Contenedor principal del autor */
+.autor__container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.imgDesiree {
+/* Imagen del autor (redonda) */
+.img__desiree {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
-.tiposRobotContainer {
+/* Contenedor de tipos de robots */
+.tipo__robot__container {
     width: 40%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/*Pantalla tipos-de-robots.html */
-.textCenter {
+/* =============================== */
+/*       PÁGINA "TIPOS DE ROBOTS"  */
+/* =============================== */
+.text__center {
     text-align: center;
 }
 
+/* Tarjetas de información */
 .card {
     border-left: 5px solid var(--color-rojo);
     padding: 10px;
@@ -196,33 +232,37 @@ p a:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.author {
+/* Autor dentro de las tarjetas */
+.card__autor {
     font-style: italic;
     color: var(--color-gris-neutro);
 }
 
-.lista-personalizada {
+/* =============================== */
+/*      LISTAS PERSONALIZADAS      */
+/* =============================== */
+.lista__personalizada {
     list-style-image: url("./../img/icon-robot.png");
 }
 
-.lista-personalizada ul {
+.lista__personalizada ul {
     list-style: square;
 }
 
-.lista-personalizada ul>li ul {
+.lista__personalizada ul>li ul {
     list-style: disc;
 }
 
-/*Pantalla robots-de-ficcion.html*/
-.authorCenter{
+/* =============================== */
+/*    PÁGINA "ROBOTS DE FICCIÓN"   */
+/* =============================== */
+.autor__center{
     display: block;
     text-align: center;
     color: var(--color-rojo);
     text-decoration: none;
 }
 
-.authorCenter:hover {
-    text-align: center;
-    color: var(--color-rojo);
+.autor__center:hover {
     text-decoration: underline;
 }
