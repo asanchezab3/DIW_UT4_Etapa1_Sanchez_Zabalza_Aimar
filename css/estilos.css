@@ -119,6 +119,7 @@ main section p {
     color: var(--color-rojo);
     font-size: 14px;
     font-weight: normal;
+    text-decoration: none;
 }
 
 .AutorFoto {
@@ -127,13 +128,26 @@ main section p {
     text-align: end;
 }
 
-.AutorFoto span {
+.AutorFoto a {
     font-style: italic;
     color: var(--color-rojo);
+    text-decoration: none;
 }
 
-p span {
+.AutorFoto a:hover {
+    font-style: italic;
     color: var(--color-rojo);
+    text-decoration: underline;
+}
+
+p a {
+    color: var(--color-rojo);
+    text-decoration: none;
+}
+
+p a:hover {
+    color: var(--color-rojo);
+    text-decoration: underline;
 }
 
 .cita {
@@ -145,7 +159,7 @@ p span {
     text-align: center;
 }
 
-.cita span {
+.cita a {
     color: var(--color-rojo);
     text-decoration: none;
 }
@@ -201,6 +215,14 @@ p span {
 
 /*Pantalla robots-de-ficcion.html*/
 .authorCenter{
+    display: block;
     text-align: center;
     color: var(--color-rojo);
+    text-decoration: none;
+}
+
+.authorCenter:hover {
+    text-align: center;
+    color: var(--color-rojo);
+    text-decoration: underline;
 }
